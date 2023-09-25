@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+	<style type="text/css">
+		.mdiv
+		{
+			height: 100vh;
+			width: 100%;
+			background-image: url('https://64.media.tumblr.com/bbaca502c65caa521f71ed05ebbe44d2/fd850e41fad78fd6-18/s540x810/c19aafbb71c157d370ec0afa770cfa9fa90ee21f.gifv') ;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+		.lgnfrm
+		{
+			width: 250px;
+			height: 300px;
+			margin: 15% 42%;
+			background-color: none;
+			border: gray;
+		}
+		input
+		{
+			width: 95%;
+			margin-top: 10px;
+			height: 20px;
+			background-color: transparent;
+			border: none;
+			border-bottom: 2px solid grey;
+			color: white;
+			text-align: center;
+			font-weight: bolder;
+		}
+		input:focus
+		{
+			outline: none;
+		}
+		.head
+		{
+			color: white;
+			letter-spacing: 5px;
+			font-size: 35px;
+			font-family: elephant;
+			font-weight: bolder;
+			text-shadow: 0px 0px 20px white;
+		}
+		input[type="button"]
+		{
+			border: none;
+			background-color: white;
+			color: gray;
+			height: 30px;
+			border-radius: 10px;
+			margin-top: 10px;
+		}
+		input[type="button"]:hover
+		{
+			background-color: white;
+			box-shadow: 0px 0px 15px white;
+			color: solid black;
+			border: 2px black;
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+		a
+		{
+			text-decoration: none;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="lgnfrm" align="center">
+			<form>
+				<h1 class="head">LOGIN</h1>
+				<input type="text" name="Username" placeholder="Username" class="ip1" id="usr">
+				<br><br>
+				<input type="Password" name="Password" placeholder="Password" class="ip1" id="pass" style="margin-bottom: 10px;" >
+				<br>
+				<span><a href="#">Forgot Password</a> </span>
+				<br><br>
+				<input type="button" name="LOGIN" value="LOGIN" style="margin-bottom:10px"onclick ="Validate()"> 
+				<br>
+				<span><a href="#">Create Account</a> </span>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let usr1 = "mangeshwalunj01"
+		let pass1 = "Mangesh#333"
+
+		function Validate()
+		{
+			let usr2 = document.getElementById("usr").value;
+			let pass2 = document.getElementById("pass").value;
+
+		if ((usr1===usr2)&&(pass1===pass2))
+		{
+			open('HomePage.html');
+		}
+		else
+		{
+			alert("Wrong Credentials !!")
+		}
+			if ((usr1===usr2)&&(pass1===pass2))
+		{
+			open('HomePage.html');
+		}
+		else
+		{
+			alert("Wrong Credentials !!")
+		}	
+		}
+
+		
+	</script>
+</body>
+</html>
